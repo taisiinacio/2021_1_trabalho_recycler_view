@@ -49,7 +49,7 @@ public class CommentsRecyclerActivity extends AppCompatActivity
 
 
     //CHAMADA DA API
-        String url = "https://jsonplaceholder.typicode.com/comment";
+        String url = "https://jsonplaceholder.typicode.com/comments";
 
         RequestQueue queue = Volley.newRequestQueue(this);
         // Request de JsonArray da URL.

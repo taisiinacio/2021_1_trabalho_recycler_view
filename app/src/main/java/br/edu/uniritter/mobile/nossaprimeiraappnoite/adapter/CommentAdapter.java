@@ -47,13 +47,13 @@ public class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentV
         if (this.listaComment.get(position) instanceof Comment) {
             Comment obj = (Comment)this.listaComment.get(position);
             TextView tv;
-            tv = holder.viewComment.findViewById(R.id.tv_comment_name);
+            tv = holder.viewComment.findViewById(R.id.tv_post_id);
             tv.setText(obj.getName());
-            tv = holder.viewComment.findViewById(R.id.tv_comment_postsId);
+            tv = holder.viewComment.findViewById(R.id.tv_album_title);
             tv.setText(""+obj.getPostId());
-            tv = holder.viewComment.findViewById(R.id.tv_comment_id);
+            tv = holder.viewComment.findViewById(R.id.tv_album_userId);
             tv.setText(""+obj.getId());
-            tv = holder.viewComment.findViewById(R.id.tv_comment_email);
+            tv = holder.viewComment.findViewById(R.id.tv_post_body);
             tv.setText(""+obj.getEmail());
             tv = holder.viewComment.findViewById(R.id.tv_comment_body);
             tv.setText(""+obj.getBody());

@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_comment_name"
+                android:id="@+id/tv_post_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView"
@@ -26,19 +26,19 @@
                 android:textColor="#3F51B5" />
 
             <TextView
-                android:id="@+id/tv_comment_postsId"
+                android:id="@+id/tv_album_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/tv_comment_id"
+                android:id="@+id/tv_album_userId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/tv_comment_email"
+                android:id="@+id/tv_post_body"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView" />

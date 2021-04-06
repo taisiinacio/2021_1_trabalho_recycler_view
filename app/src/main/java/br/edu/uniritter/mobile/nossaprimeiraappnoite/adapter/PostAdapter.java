@@ -50,13 +50,13 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         if (this.listaPosts.get(position) instanceof Post) {
             Post obj = (Post)this.listaPosts.get(position);
             TextView tv;
-            tv = holder.viewPosts.findViewById(R.id.tv_comment_name);
+            tv = holder.viewPosts.findViewById(R.id.tv_post_id);
             tv.setText(obj.getTitle());
-            tv = holder.viewPosts.findViewById(R.id.tv_comment_postsId);
+            tv = holder.viewPosts.findViewById(R.id.tv_album_title);
             tv.setText(""+obj.getUserId());
-            tv = holder.viewPosts.findViewById(R.id.tv_comment_id);
+            tv = holder.viewPosts.findViewById(R.id.tv_album_userId);
             tv.setText(""+obj.getId());
-            tv = holder.viewPosts.findViewById(R.id.tv_comment_email);
+            tv = holder.viewPosts.findViewById(R.id.tv_post_body);
             tv.setText(obj.getBody());
 
 

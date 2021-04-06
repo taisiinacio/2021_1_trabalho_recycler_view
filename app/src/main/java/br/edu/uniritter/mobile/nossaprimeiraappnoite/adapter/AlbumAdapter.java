@@ -47,12 +47,12 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
         if (this.listaAlbum.get(position) instanceof Album) {
             Album obj = (Album)this.listaAlbum.get(position);
             TextView tv;
-            tv = holder.viewAlbum.findViewById(R.id.tv_comment_name);
-            tv.setText(obj.getTitle());
-            tv = holder.viewAlbum.findViewById(R.id.tv_comment_postsId);
-            tv.setText(""+obj.getUserId());
-            tv = holder.viewAlbum.findViewById(R.id.tv_comment_id);
+            tv = holder.viewAlbum.findViewById(R.id.tv_album_id);
             tv.setText(""+obj.getId());
+            tv = holder.viewAlbum.findViewById(R.id.tv_album_title);
+            tv.setText(""+obj.getTitle());
+            tv = holder.viewAlbum.findViewById(R.id.tv_album_userId);
+            tv.setText(""+obj.getUserId());
 
 
                 CardView bt = holder.viewAlbum.findViewById(R.id.card_album);

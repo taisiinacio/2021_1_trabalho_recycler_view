@@ -9,27 +9,30 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_album"
         android:layout_width="match_parent"
-        android:layout_height="52dp">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#16A19D9D"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_comment_postsId"
+                android:id="@+id/tv_album_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#E91E63" />
+
+            <TextView
+                android:id="@+id/tv_album_userId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/tv_comment_id"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/tv_comment_name"
+                android:id="@+id/tv_album_id"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
